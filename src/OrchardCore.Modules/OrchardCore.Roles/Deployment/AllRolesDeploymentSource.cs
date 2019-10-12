@@ -21,6 +21,7 @@ namespace OrchardCore.Roles.Deployment
             _roleManager = roleManager;
             _roleService = roleService;
         }
+        
         public override async Task ProcessDeploymentStepAsync(DeploymentStep step, DeploymentPlanResult result)
         {
             var allRolesState = step as AllRolesDeploymentStep;

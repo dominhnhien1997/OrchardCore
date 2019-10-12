@@ -13,6 +13,7 @@ namespace OrchardCore.Queries.Deployment
         {
             _queryManager = queryManager;
         }
+        
         public override async Task ProcessDeploymentStepAsync(DeploymentStep step, DeploymentPlanResult result)
         {
             var allQueriesState = step as AllQueriesDeploymentStep;

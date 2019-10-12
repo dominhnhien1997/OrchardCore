@@ -17,6 +17,7 @@ namespace OrchardCore.Workflows.Deployment
             _workflowTypeStore = workflowTypeStore;
             _session = session;
         }
+        
         public override async Task ProcessDeploymentStepAsync(DeploymentStep step, DeploymentPlanResult result)
         {
             var allContentState = step as AllWorkflowTypeDeploymentStep;

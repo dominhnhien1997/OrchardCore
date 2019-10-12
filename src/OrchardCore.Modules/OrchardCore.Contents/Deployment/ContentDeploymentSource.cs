@@ -16,6 +16,8 @@ namespace OrchardCore.Contents.Deployment
         {
             _session = session;
         }
+        
+        public int Order { get; }
 
         public override int Order => -100;
         
